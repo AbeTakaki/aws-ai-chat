@@ -1,5 +1,4 @@
 # amplify.yml
-
 version: 1
 applications:
   - backend:
@@ -19,4 +18,4 @@ applications:
           - "/*"
       cache:
         paths:
-          - /npm//*
+          - .npm//*
