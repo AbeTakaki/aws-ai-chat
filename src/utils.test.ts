@@ -1,4 +1,4 @@
-import { expect, test, describe} from "vitest";
+import { expect, test, describe } from "vitest";
 import { greet } from "./utils";
 
 describe("greet関数テスト", () => {
