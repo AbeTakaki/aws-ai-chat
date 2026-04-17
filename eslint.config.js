@@ -15,6 +15,6 @@ export default defineConfig([
         version: "detect", 
       },
     },
-    ignores: ['dist/**', 'node_modules/**', 'build/**'],
+    ignores: ['dist/**', 'node_modules/**', 'build/**','.amplify/'],
   },
 ]);
