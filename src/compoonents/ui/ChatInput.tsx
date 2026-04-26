@@ -42,6 +42,16 @@ export default function ChatInput({ sendMessage }: ChatInputProps) {
             placeholder="質問を入力してください"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.nativeEvent.isComposing) return;
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                const form = e.currentTarget.closest("form");
+                if (form) {
+                  form.requestSubmit();
+                }
+              }
+            }}
           />
         }
 
